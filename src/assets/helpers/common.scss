@@ -3,3 +3,39 @@
     margin: 0 auto;
     padding: 0 10px;
 }
+.logo-text{
+    display: block;
+    padding: 0 2rem;
+    text-align: centre;
+    position: relative;
+    font-size: rem(24);
+    font-family: sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.09em;
+    text-decoration: none;
+    color: $white;
+    background: linear-gradient(to right, white, white 50%, coral 55%, aquamarine);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 0%;
+    transition: background-position 0.42s ease;
+  cursor: pointer;
+    &:hover {
+      background-position: 100%;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.main-sectionr{
+    background-color: $black-90;
+}
+.page-container{
+    padding: 120px 40px 80px;
+}
