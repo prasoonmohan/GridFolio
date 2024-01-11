@@ -1,0 +1,64 @@
+$colors: (
+  --white: $white,
+  --black: $black,
+
+  // Main
+  --primary: #7CC6C9,
+  --primary-dark: #26A0A5,
+  --secondary: #ED7D31,
+  --secondary-dark: #B35517,
+
+  // Text
+  --text-primary: #E7E9ED,
+  --text-secondary: #AEB0B5,
+  // --text-tertiary: $grey-70,
+  --text-primary-disabled: #626262,
+
+  // Background
+  // --bg-primary: $grey-90,
+  // --bg-secondary: $grey-80,
+  // --bg-tertiary: $grey-70,
+  --bg-tertiary-hover: #2C2E39,
+
+  --bg-block-primary: #7CC6C9,
+  --bg-block-secondary: #383B45,
+  --bg-block-light-on-dark: #292A33,
+
+  // Link
+  --link-primary: #ED7D31,
+  --link-secondary: #848589,
+
+  // System
+  --system-success: #43B498,
+  --system-error: #FD7580,
+
+  // Badge
+  --badge-bg-primary: #ED7D31,
+  --badge-bg-secondary: #65DBDF,
+
+  // Border
+  --border-primary: #3D3E46,
+  --border-primary-dark: #383B45,
+
+  // Interactive others
+  --Interactive-primary-hover: #64C4D1,
+
+  // Icon
+  --icon-primary: #64C4D1,
+  --icon-on-secondary: #E7E9ED,
+  --icon-on-hover: #292A33,
+);
+
+// generating root HEX, RGB variants variables
+:root {
+  &[data-theme="theme-light"] {
+
+    @each $color,
+    $value in $colors {
+      #{$color}: #{$value};
+      #{$color}-rgb: #{red($value)},
+      #{green($value)},
+      #{blue($value)};
+    }
+  }
+}
