@@ -1,6 +1,24 @@
 .card{
+    position: relative;
     background-color: $black-70;
     border-radius: 24px;
     padding: 32px;
     cursor: pointer;
+
+    &:hover{
+        .arrow-icon
+        svg{
+            path{
+                fill: $yellow-05;
+                stroke: $yellow-70;
+            }
+        }
+    
+    }
+    .arrow-icon{
+        @include IconSize(40px,40px);
+        position: absolute;
+        right: 32px;
+        bottom: 32px;
+    }
 }
