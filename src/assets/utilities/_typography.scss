@@ -9,7 +9,6 @@
   font-weight: 600;
   line-height: 1;
   text-align: center;
-  // padding-top: 80px;
 }
 .title-normal{
   font-size: rem(28);
@@ -26,4 +25,13 @@ letter-spacing: -1px;
 line-height: 1.2em;
 color: $gray-65;
 text-transform: uppercase;
+}
+
+
+.font-22{
+  font-size: rem(22);
+}
+
+.text{
+  text-transform: capitalize;
 }

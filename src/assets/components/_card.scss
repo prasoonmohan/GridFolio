@@ -106,3 +106,33 @@ height: 100%;
     background-repeat: no-repeat;
 border-radius: 24px;
 }
+
+.experience-card{
+    .experience-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+    .experience-container{
+        grid-template-columns: 1fr 2fr 3fr;
+        display: grid;
+        align-items: center;
+        gap: 20px;
+    }
+    .designation-container{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .year{
+        color: $gray-71;
+        text-transform: capitalize;
+    }
+    .line{
+        height: 1px;
+        background-color: $gray-10;
+        width: 100%;
+        flex: 1 1 0;
+    }
+}

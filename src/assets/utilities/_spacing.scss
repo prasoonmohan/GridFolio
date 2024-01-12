@@ -1,65 +1,71 @@
-$spacingBp: (
-  sm: phone-sm,
-  md: phone,
-  lg: tablet,
-);
+// $spacingBp: (
+//   sm: phone-sm,
+//   md: phone,
+//   lg: tablet,
+// );
 
-$spacingValues: (
-  p: 'padding',
-  pt: 'padding-top',
-  pr: 'padding-right',
-  pb: 'padding-bottom',
-  pl: 'padding-left',
-  m: 'margin',
-  mt: 'margin-top',
-  mr: 'margin-right',
-  mb: 'margin-bottom',
-  ml: 'margin-left',
-  column-gap: 'column-gap',
-  row-gap: 'row-gap',
-);
+// $spacingValues: (
+//   p: 'padding',
+//   pt: 'padding-top',
+//   pr: 'padding-right',
+//   pb: 'padding-bottom',
+//   pl: 'padding-left',
+//   m: 'margin',
+//   mt: 'margin-top',
+//   mr: 'margin-right',
+//   mb: 'margin-bottom',
+//   ml: 'margin-left',
+//   column-gap: 'column-gap',
+//   row-gap: 'row-gap',
+// );
 
-// This mixin generates CSS classes for padding and margin values
-@mixin generateClasses($className, $breakPointName, $property, $values...) {
-  @each $value in $values {
-    @if $breakPointName !='' {
+// // This mixin generates CSS classes for padding and margin values
+// @mixin generateClasses($className, $breakPointName, $property, $values...) {
+//   @each $value in $values {
+//     @if $breakPointName !='' {
 
-      // Generate CSS classes for padding and margin values with breakpoint
-      .auf-#{$className}-#{$breakPointName}-#{$value} {
-        // #{$property}: #{if($value == 0, 0, $value + "px")} !important;
-        #{$property}: rem($value) !important;
-      }
-    }
+//       // Generate CSS classes for padding and margin values with breakpoint
+//       .auf-#{$className}-#{$breakPointName}-#{$value} {
+//         // #{$property}: #{if($value == 0, 0, $value + "px")} !important;
+//         #{$property}: rem($value) !important;
+//       }
+//     }
 
-    @else {
+//     @else {
 
-      // Generate CSS classes for padding and margin values without breakpoint
-      .auf-#{$className}-#{$value} {
-        // #{$property}: #{if($value == 0, 0, $value + "px")} !important;
-        #{$property}: rem($value) !important;
-      }
-    }
-  }
-}
+//       // Generate CSS classes for padding and margin values without breakpoint
+//       .auf-#{$className}-#{$value} {
+//         // #{$property}: #{if($value == 0, 0, $value + "px")} !important;
+//         #{$property}: rem($value) !important;
+//       }
+//     }
+//   }
+// }
 
-// Generate classes for spacing values without breakpoints
-@each $key, $value in $spacingValues {
-  @include generateClasses($key, '', $value, 0, 2, 4, 8, 12, 16, 18, 20);
-}
+// // Generate classes for spacing values without breakpoints
+// @each $key, $value in $spacingValues {
+//   @include generateClasses($key, '', $value, 0, 2, 4, 8, 12, 16, 18, 20);
+// }
 
-// Margin auto values
-.auf-m-auto {
-  margin: auto !important;
-}
+// // Margin auto values
+// .auf-m-auto {
+//   margin: auto !important;
+// }
 
-// Generate responsive spacings for each breakpoint and device
-@each $breakpoint, $device in $spacingBp {
+// // Generate responsive spacings for each breakpoint and device
+// @each $breakpoint, $device in $spacingBp {
 
-  @include mq($device, min) {
+//   @include mq($device, min) {
 
-    // Generate classes for spacing values with breakpoints
-    @each $key, $value in $spacingValues {
-      @include generateClasses($key, $breakpoint, $value, 0, 2, 4, 8, 12, 16, 18, 20);
-    }
-  }
+//     // Generate classes for spacing values with breakpoints
+//     @each $key, $value in $spacingValues {
+//       @include generateClasses($key, $breakpoint, $value, 0, 2, 4, 8, 12, 16, 18, 20);
+//     }
+//   }
+// }
+
+
+
+.m-0{
+  margin: 0 !important;
 }
