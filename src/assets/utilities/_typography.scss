@@ -3,6 +3,13 @@
   font-family: $base-font-family;
 }
 
+.section-title{
+  color: $gray-80;
+  font-size: rem(300);
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
 .title-normal{
   font-size: rem(28);
 font-weight: 700;
@@ -18,4 +25,13 @@ letter-spacing: -1px;
 line-height: 1.2em;
 color: $gray-65;
 text-transform: uppercase;
+}
+
+
+.font-22{
+  font-size: rem(22);
+}
+
+.text{
+  text-transform: capitalize;
 }
