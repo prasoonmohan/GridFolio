@@ -3,6 +3,14 @@
   font-family: $base-font-family;
 }
 
+.section-title{
+  color: $gray-80;
+  font-size: rem(300);
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  // padding-top: 80px;
+}
 .title-normal{
   font-size: rem(28);
 font-weight: 700;
