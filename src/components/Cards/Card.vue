@@ -1,9 +1,9 @@
 <script setup>
-const props = defineProps(['className', 'image','arrow','cover']);
+const props = defineProps(['className', 'image','arrow','cover','width']);
 </script>
 
 <template>
-  <div :class="[props.className, 'card', props.image && 'pt_0' , props.cover  && 'p_0']">
+  <div :class="[props.className, 'card', props.image && 'pt_0' , props.cover  && 'p_0' , props.width == 'fit' && 'width-fit' ]">
     <slot></slot>
     <span :class="[props.arrow && 'arrow_null']" class="arrow-icon">
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,5 +24,8 @@ const props = defineProps(['className', 'image','arrow','cover']);
 }
 .arrow_null{
   display: none;
+}
+.width-fit{
+  width: fit-content !important;
 }
 </style>
