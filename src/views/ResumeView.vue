@@ -1,6 +1,39 @@
 <script setup>
 import Card from '../components/Cards/Card.vue'
-
+const JobExperience = [
+    {
+        key:1,
+        position: 'Design Lead @ Revolution',
+        year:'Sep 2019 - Present',
+        desc:'Details of your job experience goes here. Briefly showcase what you did and what you have accomplished at this role. You can also talk about the tools you used.'
+    },
+    {
+        key:2,
+        position: 'Product Designer @ Circle',
+        year:'Jul 2015 - Aug 2019',
+        desc:'Details of your job experience goes here. Briefly showcase what you did and what you have accomplished at this role. You can also talk about the tools you used.'
+    },
+    {
+        key:3,
+        position: 'Product Designer @ 360degree',
+        year:'Jan 2012 - Mar 2015',
+        desc:'Details of your job experience goes here. Briefly showcase what you did and what you have accomplished at this role. You can also talk about the tools you used.'
+    }
+]
+const Education = [
+    {
+        key:1,
+        university:'University of Technology Sydney',
+        year:'Feb 2008 - Oct 2011',
+        desc:'Here is where you can mention what you studied and brief details on what you learnt. You can also mention any extra-curricular activities you did relating to your degree.'
+    }
+]
+const  Skills = [
+    "Framer","Web Design","Prototyping","UI Design","Wireframing","UX Design","User Research","Interviews"
+]
+const Interests = [
+    "Illustration","Gaming","No Code Tools","Bike Riding","3D Modelling","Reading","Motion Graphics","Football"
+]
 </script>
 <template>
 <main class="main-section">
@@ -68,7 +101,39 @@ import Card from '../components/Cards/Card.vue'
         </div>
         <div class="item-container">
             <h4 class="title-normal">Experience</h4>
-            <p class="about-desc">I'm a multi-disciplinary Product Designer, specialising in no-code and visual development. Currently Design Lead @ Revolution. Take a look below!</p>
+<div class="item-sub-wrapper">
+    <div v-for="job in JobExperience" :key="job.key" class="item-sub-container">
+    <h6 class="about-desc position">{{job.position}}</h6>
+    <p class="year">{{job.year}}</p>
+    <p class="about-desc job-details">
+        {{ job.desc }}
+    </p>
+</div>
+</div>
+        </div>
+        <div class="item-container">
+            <h4 class="title-normal">Experience</h4>
+<div class="item-sub-wrapper">
+    <div v-for="qua in Education" :key="qua.key" class="item-sub-container">
+    <h6 class="about-desc position">{{qua.university}}</h6>
+    <p class="year">{{qua.year}}</p>
+    <p class="about-desc job-details">
+        {{ qua.desc }}
+    </p>
+</div>
+</div>
+        </div>
+        <div class="item-container">
+            <h4 class="title-normal">Skills</h4>
+           <div class="skill-container">
+            <h4 class="about-desc" v-for="skill in Skills" :key="skill">{{ skill }}</h4>
+            </div>
+        </div>
+        <div class="item-container">
+            <h4 class="title-normal">Interests</h4>
+           <div class="skill-container">
+            <h4 class="about-desc" v-for="item in Interests" :key="item">{{ item }}</h4>
+            </div>
         </div>
     </div>
 </div>

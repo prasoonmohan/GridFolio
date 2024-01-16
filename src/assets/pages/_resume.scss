@@ -7,7 +7,7 @@ display: flex;
 flex-direction: column;
 gap: 20px;
 position: sticky;
-top: 0;
+top: 110px;
 height: 100vh;
     }
     .profile-card{
@@ -85,5 +85,32 @@ gap: 16px;
         letter-spacing: -1.5px;
         line-height: 1.3em;
         color: $gray-65;
+    }
+    .item-sub-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }.position{
+color: $yellow-70;
+font-weight: 700;
+    }
+    .year{
+font-size: rem(16);
+font-weight: 500;
+letter-spacing: -1px;
+line-height: 1.2em;
+color: $gray-65;
+margin-top: 8px;
+    }
+    .job-details{
+margin-top: 16px;
+    }
+    .skill-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // max-width: 200px;
+        width: fit-content;
+        column-gap: 56px;
+        row-gap: 16px;
     }
 }
