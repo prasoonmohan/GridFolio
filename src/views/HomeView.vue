@@ -1,10 +1,11 @@
 <script setup>
 import Card from '../components/Cards/Card.vue'
+import {handleRouter} from '../hooks/useRouter'
 </script>
 <template>
 <main class="main-section">
 <div class="page-container container grid">
-    <Card :className="'grid-col-13'">
+    <Card :className="'grid-col-13'" @click="()=>handleRouter('/about')">
         <div  class="flex-column-between profile-card ">
             <span class="avatar">
                 <img src="/img/home/avatar.png" alt="">

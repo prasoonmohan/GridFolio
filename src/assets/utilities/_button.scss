@@ -50,5 +50,19 @@
 		border-color: $yellow-70;
 	}
 }
+&.send-msg{
+padding: 16px;
+border-radius: 8px;
+line-height: 1.4em;
+width: 100%;
+font-weight: 600;
+font-size: rem(16);
+background-color: $yellow-70;
+cursor: pointer;
+
+&:hover{
+	background-color: $yellow-60;
+}
+}
 
 }

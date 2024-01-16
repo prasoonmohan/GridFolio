@@ -24,7 +24,9 @@ watch(() => {
         <RouterLink to="/about" class="links" :class="{ active: activeRoute === 'about' }">About</RouterLink>
         <RouterLink to="/resume" class="links" :class="{ active: activeRoute === 'resume' }">Resume</RouterLink>
       </ul>
-      <button class="btn get-in-touch">Get in touch</button>
+<RouterLink to="/contact">
+  <button class="btn get-in-touch">Get in touch</button>
+</RouterLink>
     </div>
   </header>
 </template>
