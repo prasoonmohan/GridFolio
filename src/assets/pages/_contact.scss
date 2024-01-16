@@ -1,0 +1,150 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .top-section{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 100px;
+    }
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .main-title{
+        font-size: rem(40);
+        line-height: 1.4em;
+        
+    }
+    .title-desc{
+        font-size: rem(26);
+        font-weight: 500;
+        letter-spacing: -1.5px;
+        line-height: 1.3em;
+        color: $gray-65;
+        margin-top: 16px;
+    }
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .contact-list-container{
+        display: flex;
+        flex-direction: column;
+        gap: 8PX;
+    }
+    .contact-link{
+        text-transform: initial;
+        cursor: pointer;
+        width: fit-content;
+
+        &:hover{
+            color: $yellow-70;
+            text-decoration: underline;
+            
+        }
+    }
+    .social-container{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    
+     }
+     .social-icon{
+        @include IconSize(32px,32px ,pointer);
+    
+            svg{
+                path{
+                   transition: stroke .4s;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        stroke: $yellow-70;
+                    }
+                }
+            }
+     }
+     .linkedin{
+        @include IconSize(32px,32px ,pointer);
+        svg{
+            path{
+               transition: fill .4s;
+            }
+            rect{
+                transition: stroke .4s;
+            }
+        }
+        &:hover{
+            svg{
+                path{
+                   fill:$yellow-70;
+                }
+                rect{
+                   stroke:$yellow-70;
+                }
+            }
+        }
+     }
+     .right-section{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 24px;
+        // width: 100%;s
+        height: 100%;
+        padding: 32px;
+        background-color: $black-70;
+     }
+     .input-field{
+        padding: 16px;
+        background-color: $black-30 ;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        font-weight: 400;
+        font-size: rem(16);
+        color: $white-70;
+
+        &::placeholder{
+            color: $gray-70;
+        }
+     }
+     .text-area{
+        height: 150px;
+        resize: none;
+     }
+     .bottom-section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 24px;
+     }
+     .bottom-card{
+
+    padding: 56px 32px;
+     }
+     .card-icon{
+        @include IconSize(80px,80px);
+        padding:8px;
+     }
+     .card-title{
+font-size: rem(26);
+font-weight: 700;
+letter-spacing: -1.5px;
+line-height: 1.2em;
+color: $gray-65;
+margin-top: 32px;
+     }
+     .card-desc{
+        font-size: rem(22);
+        font-weight: 500;
+        letter-spacing: -1.2px;
+line-height: 1.2em;
+margin-top: 16px;
+color: $gray-65;
+
+     }
+}

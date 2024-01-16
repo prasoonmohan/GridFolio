@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps(['className', 'image','arrow','cover','width']);
+const props = defineProps(['className', 'image','arrow','cover']);
 </script>
 
 <template>
