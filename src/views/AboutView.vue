@@ -16,7 +16,7 @@ import Card from '../components/Cards/Card.vue'
   <p class="desc m-0">Front End Developer at AufaitUX</p>
 </div>
   </Card>
-  <Card  :arrow="true" :className="'grid-col-13'">
+  <Card  :arrow="true" :className="'grid-col-13 '">
   <div class="flex-column-end">
 <h4 class="title-normal">About me</h4>
 <p class="title-medium font-22 text">I’m a product designer based in Sydney specialising in web design, illustration and visual development. I have worked in multidisciplinary fields, in both large and small companies, startups and as a freelancer.</p>

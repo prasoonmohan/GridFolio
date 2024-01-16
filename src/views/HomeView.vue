@@ -5,7 +5,7 @@ import {handleRouter} from '../hooks/useRouter'
 <template>
 <main class="main-section">
 <div class="page-container container grid">
-    <Card :className="'grid-col-13'" @click="()=>handleRouter('/about')">
+    <Card :className="'profile-card'" @click="()=>handleRouter('/about')">
         <div  class="flex-column-between profile-card ">
             <span class="avatar">
                 <img src="/img/home/avatar.png" alt="">
@@ -64,7 +64,7 @@ import {handleRouter} from '../hooks/useRouter'
             </span>
         </div>
     </Card>
-    <Card :image="true" :className="'grid-col-35'">
+    <Card :image="true" :className="' work1-card'">
         <div class="work-card grid-22">
 <span class="">
     <img src="/img/work/work3.png" alt="">
@@ -77,13 +77,13 @@ import {handleRouter} from '../hooks/useRouter'
         </div>
         </div>
     </Card>
-    <Card :className="'grid-col-13'"> 
+    <Card :className="'lets-work-card'"> 
         <div class="flex-column-end">
 <h4 class="title-normal">Let's work together ⚒️</h4>
 <h2 class="get-in-touch">Get in touch now</h2>
         </div>
     </Card>
-    <Card :className="'grid-col-35'">
+    <Card :className="'icon-list-card'">
         <div class="flex-column-end icon-list-card">
             <p class="title-medium">what i do</p>
             <div class="list-container">

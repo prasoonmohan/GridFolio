@@ -4,8 +4,10 @@
     border-radius: 24px;
     padding: 32px;
     cursor: pointer;
-    // min-height: 305px;
-
+min-height: 303px;
+@include mq(desktop-md){
+    min-height: 280px;
+}
     &:hover{
         .arrow-icon
         svg{
@@ -22,6 +24,11 @@
         right: 32px;
         cursor: pointer;
         bottom: 32px;
+
+        @include mq(desktop-wide){
+            bottom: 20px;
+            right: 20px
+        }
     }
 }
 
@@ -62,6 +69,19 @@
         flex-direction: column;
         gap: 16px;
     }
+    .title-normal{
+        @include mq(desktop-wide){
+            max-width: 70%;
+        text-wrap: wrap;
+        }
+
+        @include mq(desktop-md){
+            max-width: 100%;
+        }
+        @include mq(tablet){
+           max-width: 70%;
+        }
+    }
 }
 .work-card{
     display: flex;
@@ -73,6 +93,13 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        img{
+            height: 200px;
+        }
     }
 }
 
