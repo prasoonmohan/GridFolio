@@ -39,7 +39,7 @@ const Interests = [
 <main class="main-section">
 <div class="page-container container resume-container">
     <div class="left-section">
-<Card :arrow="true" >
+<Card :arrow="true" :className="'name-card'" >
     <div  class=" profile-card ">
             <span class="avatar">
                 <img src="/img/home/avatar.png" alt="">
