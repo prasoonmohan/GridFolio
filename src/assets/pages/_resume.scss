@@ -12,6 +12,7 @@ flex-direction: column;
 gap: 20px;
 position: sticky;
 top: 110px;
+height: 100vh;
 @include mq(desktop-md){
    position: static;
    flex-direction: row;
