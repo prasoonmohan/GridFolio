@@ -44,6 +44,7 @@
     }
     @include mq(phone){
        grid-template-columns: 1fr;
+       column-gap: 0;
     }
 }
 
