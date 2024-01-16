@@ -1,0 +1,68 @@
+.btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	font-weight: 400;
+	line-height: 1.2;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	border-radius: $border-radius;
+	cursor: pointer;
+	font-size: rem(16);
+	user-select: none;
+	transition: all 0.3s ease-in-out;
+	&:disabled,
+	&.disabled,
+	&[aria-disabled='true'] {
+		cursor: default;
+	}
+	svg {
+		* {
+			transition: all .4s;
+		}
+	}
+&.get-in-touch{
+	font-size: rem(16);
+	background-color: $white-70;
+	color: $black-70;
+	font-weight: 700;
+	letter-spacing: -1px;
+	padding: 8px 16px;
+	border-radius: 100px;
+
+	&:hover{
+		background-color: $yellow-70;
+	}
+
+}
+
+&.contact-us{
+	border-color:$white-70 ;
+	background-color: transparent;
+	color: $white-70;
+	width: fit-content;
+	&:hover{
+		background-color: transparent;
+		color: $yellow-70;
+		border-color: $yellow-70;
+	}
+}
+&.send-msg{
+padding: 16px;
+border-radius: 8px;
+line-height: 1.4em;
+width: 100%;
+font-weight: 600;
+font-size: rem(16);
+background-color: $yellow-70;
+cursor: pointer;
+
+&:hover{
+	background-color: $yellow-60;
+}
+}
+
+}

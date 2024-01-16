@@ -1,0 +1,69 @@
+// Ellipsis
+@mixin truncate($line: 1, $truncation-boundary: 100%) {
+	max-width: $truncation-boundary;
+	min-width: 0;
+	-webkit-line-clamp: $line;
+	-webkit-box-orient: vertical;
+
+	@if $line ==1 {
+		white-space: nowrap;
+	}
+
+	@else {
+		display: -webkit-box;
+		white-space: normal;
+	}
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@mixin custom-scroll {
+	scrollbar-color: light;
+	scrollbar-width: thin;
+	scrollbar-color: var(--white) transparent;
+
+	&::-webkit-scrollbar {
+		-webkit-appearance: none;
+		width: calc($customScrollSize - 1px);
+		height: calc($customScrollSize - 1px);
+	}
+
+	&::-webkit-scrollbar-button,
+	&::-webkit-scrollbar-corner {
+		display: none;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: transparent;
+		min-width: 32px;
+		min-height: 32px;
+		border-radius: 5px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	&:hover {
+		&::-webkit-scrollbar-thumb {
+			background-color: rgba(var(--white-rgb), .25);
+		}
+	}
+}
+
+.custom-scroll {
+	@include custom-scroll;
+}
+
+
+@mixin IconSize ($width,$height,$cursor:auto){
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: $width;
+	min-height: $height;
+	max-width: $width;
+	max-height: $height;
+	cursor: $cursor;
+}

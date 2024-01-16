@@ -1,0 +1,116 @@
+.resume-container{
+    display: grid;
+    grid-template-columns: 1fr 2.3fr;
+    gap: 64px;
+    .left-section{
+display: flex;
+flex-direction: column;
+gap: 20px;
+position: sticky;
+top: 110px;
+height: 100vh;
+    }
+    .profile-card{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .data-container{
+display: flex;
+flex-direction: column;
+gap: 12px;
+    }
+    .link{
+color: $gray-65;     
+text-transform: lowercase;   
+width: fit-content;
+&:hover{
+    text-decoration: underline;
+}
+    }
+    .link-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .link-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+&:hover{
+    .arrow
+    svg{
+        path{
+            fill: $yellow-05;
+            stroke: $yellow-70;
+        }
+    }
+}
+
+    }
+    .social-link{
+        font-size: rem(22);
+        color: $gray-65;
+        text-transform: capitalize;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .arrow{
+transform: rotate(-50deg);
+    }
+    .line{
+        height: 1px;
+        width: 100%;
+        background-color: $gray-80;
+    }
+    .right-section{
+display: flex;
+flex-direction: column;
+gap: 54px;
+    }
+    .item-container{
+display: flex;
+flex-direction: column;
+gap: 16px;
+    }
+    .about-desc{
+        font-size: rem(26);
+        font-weight: 500;
+        letter-spacing: -1.5px;
+        line-height: 1.3em;
+        color: $gray-65;
+    }
+    .item-sub-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }.position{
+color: $yellow-70;
+font-weight: 700;
+    }
+    .year{
+font-size: rem(16);
+font-weight: 500;
+letter-spacing: -1px;
+line-height: 1.2em;
+color: $gray-65;
+margin-top: 8px;
+    }
+    .job-details{
+margin-top: 16px;
+    }
+    .skill-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // max-width: 200px;
+        width: fit-content;
+        column-gap: 56px;
+        row-gap: 16px;
+    }
+}

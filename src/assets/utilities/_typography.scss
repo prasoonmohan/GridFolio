@@ -1,0 +1,43 @@
+// font family
+.font-family-primary {
+  font-family: $base-font-family;
+}
+
+.section-title{
+  color: $gray-80;
+  font-weight: 600;
+  font-size: clamp(0px, 22vw, 320px);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  white-space: nowrap;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  left: 0%;
+}
+.title-normal{
+  font-size: rem(28);
+font-weight: 700;
+letter-spacing: -2px;
+line-height: 1.2em;
+color: $white-70;
+text-transform: capitalize;
+}
+.title-medium{
+  font-size: rem(14);
+font-weight: 500;
+letter-spacing: -1px;
+line-height: 1.2em;
+color: $gray-65;
+text-transform: uppercase;
+}
+
+.font-22{
+  font-size: rem(22);
+}
+
+.text{
+  text-transform: capitalize;
+}
