@@ -1,0 +1,60 @@
+.about-us-container{
+    .picture-card{
+        grid-column: 1/4;
+        @include mq(tablet){
+            grid-column: 1/3;
+        }
+        @include mq(phone){
+            grid-column: 1/3;
+        }
+    }
+    .name-card{
+        @include mq(phone){
+            // grid-column: 1/3;
+        }
+    }
+    .about-card{
+        grid-column: 1/3;
+        @include mq(desktop-md){
+            grid-column: 2/4;
+        }
+        @include mq(tablet){
+            grid-column: 2;
+        }
+        @include mq(phone){
+            grid-column: 1/3;
+        }
+    }
+    .experience-card{
+        grid-column: 3/5;
+
+        @include mq(desktop-md){
+            grid-column: 1/3;
+        }
+        @include mq(tablet){
+            grid-column: 1/3;
+        }
+    }
+    .lets-work-card{
+        grid-column: 2/4;
+        @include mq(desktop-md){
+            grid-column: 1/3;
+        }
+        @include mq(tablet){
+            grid-column: 1/3;
+        }
+        @include mq(phone){
+            grid-column: 1;
+        }
+    }
+    .resume-card{
+        @include mq(tablet){
+            grid-row: 4;
+            grid-column: 2;
+        }
+        @include mq(phone){
+            grid-column: 1;
+            grid-row: 7;
+        }
+    }
+}

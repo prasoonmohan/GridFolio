@@ -3,10 +3,10 @@ import Card from '../components/Cards/Card.vue'
 </script>
 <template>
     <main class="main-section">
-  <section class="page-container container ">
+  <section class="page-container container work-container">
 <h2 class="section-title">My Works</h2>
 <div class="grid">
-    <Card :image="true" :className="'grid-col-13'">
+    <Card :image="true" :className="' work1-card'">
         <div class="work-card grid-22">
 <span class="">
     <img src="/img/work/work3.png" alt="">
@@ -71,7 +71,7 @@ import Card from '../components/Cards/Card.vue'
         </div>
         </div>
     </Card>
-    <Card :image="true" :className="'grid-col-35'">
+    <Card :image="true" :className="' work5-card'">
         <div class="work-card grid-22">
 <span class="">
     <img src="/img/work/work3.png" alt="">

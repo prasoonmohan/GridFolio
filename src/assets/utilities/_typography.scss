@@ -5,10 +5,17 @@
 
 .section-title{
   color: $gray-80;
-  font-size: rem(300);
   font-weight: 600;
-  line-height: 1;
+  font-size: clamp(0px, 22vw, 320px);
+  font-weight: 600;
   text-align: center;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  white-space: nowrap;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  left: 0%;
 }
 .title-normal{
   font-size: rem(28);
