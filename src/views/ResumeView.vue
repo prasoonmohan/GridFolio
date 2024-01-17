@@ -52,15 +52,16 @@ const Interests = [
                 </p>
 </div>
 <div class="data-container">
-    <h5 class="title-medium font-22 link">thisismeprasu@gmail.com</h5>
-    <h5 class="title-medium font-22 link">prasoonm.com</h5>
+    <RouterLink to="thisismeprasu@gmail.om" class="title-medium font-22 link">thisismeprasu@gmail.com</RouterLink>
+    <RouterLink to="prasoonm.com" class="title-medium font-22 link">prasoonm.com</RouterLink>
 </div>
-<button class="btn get-in-touch contact-us">Contact Me</button>
+<RouterLink to="/contact" >
+    <button class="btn get-in-touch contact-us">Contact Me</button></RouterLink>
             </div>
         </div>
 </Card>
 <Card :arrow="true" :className="'link-wrapper'"> 
-<div class="link-container">
+<RouterLink to="" class="link-container">
     <h5 class="title-normal social-link">LinkedIn</h5>
     <span class="arrow">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,9 +70,9 @@ const Interests = [
 <path d="M13.332 20H26.6654" stroke="#E0DFDC" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
     </span>
-</div>
+</RouterLink>
 <div class="line"></div>
-<div class="link-container">
+<RouterLink to="" class="link-container">
     <h5 class="title-normal social-link">Twitter</h5>
     <span class="arrow">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,9 +81,9 @@ const Interests = [
 <path d="M13.332 20H26.6654" stroke="#E0DFDC" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
     </span>
-</div>
+</RouterLink>
 <div class="line"></div>
-<div class="link-container">
+<RouterLink to="" class="link-container">
     <h5 class="title-normal social-link">instagram</h5>
     <span class="arrow">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +92,7 @@ const Interests = [
 <path d="M13.332 20H26.6654" stroke="#E0DFDC" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
     </span>
-</div>
+</RouterLink>
 </Card>
     </div>
     <div class="right-section">
