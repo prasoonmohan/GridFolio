@@ -37,6 +37,10 @@
 		background-color: $yellow-70;
 	}
 
+	@include mq(phone){
+		width: 100%;
+	}
+
 }
 
 &.contact-us{
