@@ -17,6 +17,10 @@ title:"Branding",
 desc:"Combining both my visual and analytical side, I love creating brands that not only look great, but sell as well."
     },
 ]
+const sendEmail = () => {
+  window.location.href = "mailto:thisismeprasu@gmail.com";
+};
+
 </script>
 <template>
     <main class="main-section">
@@ -34,7 +38,7 @@ desc:"Combining both my visual and analytical side, I love creating brands that 
 </div>
 <div class="contact-list-container">
     <h6 class="title-medium">JUST WANT TO EMAIL ME?</h6>
-    <h4  class="title-medium font-22 contact-link">thisismeprasu@gmail.com</h4>
+    <a @click="sendEmail"  class="title-medium font-22 contact-link">thisismeprasu@gmail.com</a>
 </div>
 </div>
 <div class="social-container">

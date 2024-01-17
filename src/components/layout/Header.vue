@@ -35,10 +35,10 @@ const toggleMenu = () => {
 </div>
      </div>
       <ul class="link-container">
-        <RouterLink to="/" class="links" :class="{ active: activeRoute === 'home' }">Home</RouterLink>
-        <RouterLink to="/work" class="links" :class="{ active: activeRoute === 'work' }">Works</RouterLink>
-        <RouterLink to="/about" class="links" :class="{ active: activeRoute === 'about' }">About</RouterLink>
-        <RouterLink to="/resume" class="links" :class="{ active: activeRoute === 'resume' }">Resume</RouterLink>
+        <RouterLink @click="toggleMenu" to="/" class="links" :class="{ active: activeRoute === 'home' }">Home</RouterLink>
+        <RouterLink @click="toggleMenu" to="/work" class="links" :class="{ active: activeRoute === 'work' }">Works</RouterLink>
+        <RouterLink @click="toggleMenu" to="/about" class="links" :class="{ active: activeRoute === 'about' }">About</RouterLink>
+        <RouterLink @click="toggleMenu" to="/resume" class="links" :class="{ active: activeRoute === 'resume' }">Resume</RouterLink>
       </ul>
 <RouterLink to="/contact" class="get-in">
   <button class="btn get-in-touch">Get in touch</button>

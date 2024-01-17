@@ -34,6 +34,9 @@ const  Skills = [
 const Interests = [
     "Illustration","Gaming","No Code Tools","Bike Riding","3D Modelling","Reading","Motion Graphics","Football"
 ]
+const sendEmail = () => {
+  window.location.href = "mailto:thisismeprasu@gmail.com";
+};
 </script>
 <template>
 <main class="main-section">
@@ -52,8 +55,8 @@ const Interests = [
                 </p>
 </div>
 <div class="data-container">
-    <RouterLink to="thisismeprasu@gmail.om" class="title-medium font-22 link">thisismeprasu@gmail.com</RouterLink>
-    <RouterLink to="prasoonm.com" class="title-medium font-22 link">prasoonm.com</RouterLink>
+    <a @click="sendEmail" class="title-medium font-22 link">thisismeprasu@gmail.com</a>
+    <a href="https://prasoonm.com/" class="title-medium font-22 link">prasoonm.com</a>
 </div>
 <RouterLink to="/contact" >
     <button class="btn get-in-touch contact-us">Contact Me</button></RouterLink>
@@ -61,7 +64,7 @@ const Interests = [
         </div>
 </Card>
 <Card :arrow="true" :className="'link-wrapper'"> 
-<RouterLink to="" class="link-container">
+<a href="https://www.linkedin.com/in/prasoon-mohan/" class="link-container">
     <h5 class="title-normal social-link">LinkedIn</h5>
     <span class="arrow">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,9 +73,9 @@ const Interests = [
 <path d="M13.332 20H26.6654" stroke="#E0DFDC" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
     </span>
-</RouterLink>
+</a>
 <div class="line"></div>
-<RouterLink to="" class="link-container">
+<a href="https://twitter.com/mohan_prasoon" class="link-container">
     <h5 class="title-normal social-link">Twitter</h5>
     <span class="arrow">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,9 +84,9 @@ const Interests = [
 <path d="M13.332 20H26.6654" stroke="#E0DFDC" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
     </span>
-</RouterLink>
+</a>
 <div class="line"></div>
-<RouterLink to="" class="link-container">
+<a href="https://www.instagram.com/web.devofficial" class="link-container">
     <h5 class="title-normal social-link">instagram</h5>
     <span class="arrow">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +95,7 @@ const Interests = [
 <path d="M13.332 20H26.6654" stroke="#E0DFDC" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
     </span>
-</RouterLink>
+</a>
 </Card>
     </div>
     <div class="right-section">
