@@ -21,7 +21,7 @@ import {RouterLink} from 'vue-router'
 <h5 class="brief-text title-normal">The Brief</h5>
 <p class="brief-desc title-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
 </div>
-<div class="image-card-container">
+<div class="image-card-container container">
 <span class="img-container">
     <img src="/img/project/pic1.png" alt="">
 </span>
@@ -38,7 +38,7 @@ import {RouterLink} from 'vue-router'
     <p class="brief-desc title-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
 </div>
 </div>
-<div class="image-card-container bottom-image-container">
+<div class="image-card-container container bottom-image-container">
 <span class="img-container">
     <img src="/img/project/pic3.png" alt="">
 </span>
