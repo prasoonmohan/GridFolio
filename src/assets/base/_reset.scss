@@ -5,7 +5,9 @@
 *::after {
 	box-sizing: border-box;
 }
-
+a{
+	text-decoration: none;
+}
 /* Remove default margin and padding and reset fonts */
 * {
 	margin: 0;

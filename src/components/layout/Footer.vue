@@ -6,27 +6,27 @@ import {RouterLink} from 'vue-router'
     <div class="footer-top">
         <RouterLink to="/" class="logo-text"> GridFolio</RouterLink>
         <ul class="link-container">
-    <li class="links active">Home</li>
-    <li class="links">Works</li>
-    <li class="links">About</li>
-    <li class="links">Resume</li>
+    <RouterLink to="/" class="links">Home</RouterLink>
+    <RouterLink to="/works" class="links">Works</RouterLink>
+    <RouterLink to="/about" class="links">About</RouterLink>
+    <RouterLink to="/resume" class="links">Resume</RouterLink>
 </ul>
     </div>
 <div class="social-container">
-    <span class="linkedin">
+    <a href="https://www.linkedin.com/in/prasoon-mohan/" class="linkedin">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11.0697 11.1394C10.7707 11.1394 10.5176 11.0359 10.3106 10.8289C10.1035 10.6218 10 10.3688 10 10.0697C10 9.77066 10.1035 9.51761 10.3106 9.31057C10.5176 9.10352 10.7707 9 11.0697 9C11.3573 9 11.5988 9.10352 11.7944 9.31057C12.0014 9.51761 12.1049 9.77066 12.1049 10.0697C12.1049 10.3688 12.0014 10.6218 11.7944 10.8289C11.5988 11.0359 11.3573 11.1394 11.0697 11.1394ZM11.8289 12.675V22.13H10.2588V12.675H11.8289Z" fill="#B0AEA7"/>
 <path d="M19.1115 12.5025C20.2618 12.5025 21.1935 12.8533 21.9066 13.555C22.6198 14.2451 22.9763 15.2458 22.9763 16.5571V22.13H21.4235V16.7814C21.4235 15.8382 21.1877 15.1193 20.7161 14.6247C20.2445 14.1186 19.6004 13.8655 18.7837 13.8655C17.9555 13.8655 17.2941 14.1243 16.7995 14.6419C16.3164 15.1595 16.0749 15.9129 16.0749 16.9022V22.13H14.5048V12.675H16.0749V14.0208C16.3855 13.5377 16.8053 13.1639 17.3344 12.8993C17.875 12.6348 18.4674 12.5025 19.1115 12.5025Z" fill="#B0AEA7"/>
 <rect x="5" y="5" width="22" height="22" rx="3" stroke="#B0AEA7" stroke-width="2"/>
 </svg>
 
-    </span>
-    <span class="social-icon twitter">
+    </a>
+    <a href="https://twitter.com/mohan_prasoon" class="social-icon twitter">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60513 4.01032 5.43868 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94364 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005V3.00005Z" stroke="#B0AEA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-    </span>
-    <span class="social-icon">
+    </a>
+    <a href="https://github.com/prasoonmohan" class="social-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2_1639)">
 <path d="M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22M9 19C4 20.5 4 16.5 2 16L9 19Z" stroke="#B0AEA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -37,14 +37,14 @@ import {RouterLink} from 'vue-router'
 </clipPath>
 </defs>
 </svg>
-    </span>
-    <span class="social-icon">
+    </a>
+    <a href="https://www.instagram.com/web.devofficial" class="social-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#B0AEA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M16 11.37C16.1234 12.2022 15.9812 13.0522 15.5937 13.799C15.2062 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4077 15.9059C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1902 8.22768 13.4229 8.09402 12.5922C7.96035 11.7615 8.09202 10.9099 8.47028 10.1584C8.84854 9.40685 9.45414 8.79374 10.2009 8.40624C10.9477 8.01874 11.7977 7.87658 12.63 8C13.4789 8.12588 14.2648 8.52146 14.8716 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="#B0AEA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M17.5 6.5H17.51" stroke="#B0AEA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-    </span>
+    </a>
 </div>
 <p class="copyright">
     © 2024 Gridfolio

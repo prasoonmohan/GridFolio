@@ -1,9 +1,11 @@
 <script setup>
-const props = defineProps(['className', 'image','arrow','cover']);
+import { RouterLink } from 'vue-router';
+
+const props = defineProps(['className', 'image','arrow','cover','link']);
 </script>
 
 <template>
-  <div :class="[props.className, 'card', props.image && 'pt_0' , props.cover  && 'p_0' , props.width == 'fit' && 'width-fit' ]">
+  <RouterLink :to="props.link ? props.link : ''" :class="[props.className, 'card', props.image && 'pt_0' , props.cover  && 'p_0' , props.width == 'fit' && 'width-fit' ]">
     <slot></slot>
     <span :class="[props.arrow && 'arrow_null']" class="arrow-icon">
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,9 +14,8 @@ const props = defineProps(['className', 'image','arrow','cover']);
 <path d="M13.332 20H26.6654" stroke="#E0DFDC" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
     </span>
-  </div>
+  </RouterLink>
 </template>
-
 <style scoped>
 .pt_0 {
   padding-top: 0 !important;
