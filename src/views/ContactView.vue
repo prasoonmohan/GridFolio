@@ -18,7 +18,7 @@ desc:"Combining both my visual and analytical side, I love creating brands that 
     },
 ]
 const sendEmail = () => {
-  window.location.href = "mailto:thisismeprasu@gmail.com";
+  window.location.href = "mailto:";
 };
 
 </script>
@@ -38,7 +38,7 @@ const sendEmail = () => {
 </div>
 <div class="contact-list-container">
     <h6 class="title-medium">JUST WANT TO EMAIL ME?</h6>
-    <a @click="sendEmail"  class="title-medium font-22 contact-link">thisismeprasu@gmail.com</a>
+    <a @click="sendEmail"  class="title-medium font-22 contact-link">hello@andrew.com</a>
 </div>
 </div>
 <div class="social-container">

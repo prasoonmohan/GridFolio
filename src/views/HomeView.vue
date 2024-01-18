@@ -11,9 +11,9 @@ import {handleRouter} from '../hooks/useRouter'
                 <img src="/img/home/avatar.png" alt="">
             </span>
             <div class="text-container">
-                <h3 class="name">Hey, I'm Prasoon 👋</h3>
+                <h3 class="name">Hey, I'm Andrew 👋</h3>
                 <p class="desc">
-                    Front End Developer at AufaitUX
+                    A senior designer at Revolution
                 </p>
             </div>
         </div>

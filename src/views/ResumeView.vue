@@ -35,7 +35,7 @@ const Interests = [
     "Illustration","Gaming","No Code Tools","Bike Riding","3D Modelling","Reading","Motion Graphics","Football"
 ]
 const sendEmail = () => {
-  window.location.href = "mailto:thisismeprasu@gmail.com";
+  window.location.href = "mailto:";
 };
 </script>
 <template>
@@ -49,14 +49,16 @@ const sendEmail = () => {
             </span>
             <div class="text-container">
 <div class="data-container">
-    <h3 class="title-normal">Prasoon Mohan</h3>
+    <h3 class="title-normal">Andrew Mallen</h3>
                 <p class="designation">
-                    Front End Developer
+                    Design Lead
                 </p>
 </div>
 <div class="data-container">
-    <a @click="sendEmail" class="title-medium font-22 link">thisismeprasu@gmail.com</a>
-    <a href="https://prasoonm.com/" class="title-medium font-22 link">prasoonm.com</a>
+    <a @click="sendEmail" class="title-medium font-22 link">hello@andrew.com
+</a>
+<!-- https://prasoonm.com/ -->
+    <a href="" class="title-medium font-22 link">www.andrewmallen.com</a>
 </div>
 <RouterLink to="/contact" >
     <button class="btn get-in-touch contact-us">Contact Me</button></RouterLink>
@@ -64,7 +66,8 @@ const sendEmail = () => {
         </div>
 </Card>
 <Card :arrow="true" :className="'link-wrapper'"> 
-<a href="https://www.linkedin.com/in/prasoon-mohan/" class="link-container">
+    <!-- https://www.linkedin.com/in/prasoon-mohan/ -->
+<a href="" class="link-container">
     <h5 class="title-normal social-link">LinkedIn</h5>
     <span class="arrow">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +78,8 @@ const sendEmail = () => {
     </span>
 </a>
 <div class="line"></div>
-<a href="https://twitter.com/mohan_prasoon" class="link-container">
+<!-- https://twitter.com/mohan_prasoon -->
+<a href="" class="link-container">
     <h5 class="title-normal social-link">Twitter</h5>
     <span class="arrow">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +90,8 @@ const sendEmail = () => {
     </span>
 </a>
 <div class="line"></div>
-<a href="https://www.instagram.com/web.devofficial" class="link-container">
+<!-- https://www.instagram.com/web.devofficial -->
+<a href="" class="link-container">
     <h5 class="title-normal social-link">instagram</h5>
     <span class="arrow">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

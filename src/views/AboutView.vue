@@ -12,8 +12,8 @@ import Card from '../components/Cards/Card.vue'
   </Card>
   <Card  :arrow="true" :className="' name-card'">
 <div class="flex-column-end profile-card">
-  <h4 class="name">Hey, I'm <br> Prasoon 👋</h4>
-  <p class="desc m-0">Front End Developer at AufaitUX</p>
+  <h4 class="name">Hey, I'm <br> Andrew 👋</h4>
+  <p class="desc m-0">Design Lead at Revolution</p>
 </div>
   </Card>
   <Card  :arrow="true" :className="' about-card'">
