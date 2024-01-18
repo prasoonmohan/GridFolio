@@ -6,11 +6,17 @@
         display: grid;
         grid-template-columns: 1fr 1.5fr;
         gap: 100px;
+        @include mq(desktop-md){
+            grid-template-columns: 1fr;
+            gap: 48px;
+            
+           }
     }
     .left-section{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
     }
     .main-title{
         font-size: rem(40);
@@ -121,6 +127,9 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 24px;
+        @include mq(desktop-md){
+            grid-template-columns: 1fr;
+        }
      }
      .bottom-card{
 

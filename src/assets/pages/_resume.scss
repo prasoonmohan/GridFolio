@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 2.3fr;
     gap: 64px;
+
+    @include mq(desktop-md){
+        grid-template-columns: 1fr;
+    }
     .left-section{
 display: flex;
 flex-direction: column;
@@ -9,11 +13,25 @@ gap: 20px;
 position: sticky;
 top: 110px;
 height: 100vh;
+@include mq(desktop-md){
+   position: static;
+   flex-direction: row;
+   height: 100%;
+}
+@include mq(tablet){
+    flex-direction: column;
+}
+    }
+    .name-card{
+        @include mq(desktop-md){
+            width: 100%;
+        }
     }
     .profile-card{
         display: flex;
         flex-direction: column;
         gap: 16px;
+
     }
     .text-container{
         display: flex;
@@ -37,6 +55,10 @@ width: fit-content;
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @include mq(desktop-md){
+            width: 100%;
+            justify-content: end;
+        }
     }
     .link-container{
 display: flex;

@@ -6,7 +6,7 @@ import Card from '../components/Cards/Card.vue'
   <section class="page-container container work-container">
 <h2 class="section-title">My Works</h2>
 <div class="grid">
-    <Card :image="true" :className="' work1-card'">
+    <Card :image="true" :className="' work1-card'" :link="'/work/project'">
         <div class="work-card grid-22">
 <span class="">
     <img src="/img/work/work3.png" alt="">
@@ -19,7 +19,7 @@ import Card from '../components/Cards/Card.vue'
         </div>
         </div>
     </Card>
-    <Card :image="true">
+    <Card :image="true" :link="'/work/project'">
         <div class="work-card">
 <span class="">
     <img src="/img/work/work2.png" alt="">
@@ -32,7 +32,7 @@ import Card from '../components/Cards/Card.vue'
         </div>
         </div>
     </Card>
-    <Card :image="true">
+    <Card :image="true" :link="'/work/project'">
         <div class="work-card">
 <span class="">
     <img src="/img/work/work2.png" alt="">
@@ -45,7 +45,7 @@ import Card from '../components/Cards/Card.vue'
         </div>
         </div>
     </Card>
-    <Card :image="true">
+    <Card :image="true" :link="'/work/project'">
         <div class="work-card">
 <span class="">
     <img src="/img/work/work2.png" alt="">
@@ -58,7 +58,7 @@ import Card from '../components/Cards/Card.vue'
         </div>
         </div>
     </Card>
-    <Card :image="true">
+    <Card :image="true" :link="'/work/project'">
         <div class="work-card">
 <span class="">
     <img src="/img/work/work2.png" alt="">
@@ -71,7 +71,7 @@ import Card from '../components/Cards/Card.vue'
         </div>
         </div>
     </Card>
-    <Card :image="true" :className="' work5-card'">
+    <Card :image="true" :className="' work5-card'" :link="'/work/project'">
         <div class="work-card grid-22">
 <span class="">
     <img src="/img/work/work3.png" alt="">
