@@ -24,6 +24,10 @@ letter-spacing: -2px;
 line-height: 1.2em;
 color: $white-70;
 text-transform: capitalize;
+
+@include mq(phone){
+  letter-spacing: -1px;
+}
 }
 .title-medium{
   font-size: rem(14);

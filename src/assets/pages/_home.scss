@@ -6,6 +6,11 @@
  letter-spacing: -4px;
  line-height: 1.2em;   
  color: $yellow-70;
+
+ @include mq(phone){
+     font-size: rem(40);
+     letter-spacing: -3px;
+ }
 }
 
 .profile-card{

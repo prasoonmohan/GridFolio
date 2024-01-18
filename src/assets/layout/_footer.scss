@@ -9,6 +9,10 @@
     display: flex;
     align-items: center;
     gap: 40px;
+
+    @include mq(tablet){
+        flex-direction: column;
+    }
  }
  .link-container{
     display: flex;
