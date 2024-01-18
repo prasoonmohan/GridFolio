@@ -57,7 +57,7 @@ import {handleRouter} from '../hooks/useRouter'
         </div>
         </div>
     </Card>
-    <Card :link="''">
+    <Card :href="'https://twitter.com/mohan_prasoon'">
         <div class="social-icon-card flex-center-center">
             <span class="icon">
 <img src="/svg/twitter.svg" alt="">
