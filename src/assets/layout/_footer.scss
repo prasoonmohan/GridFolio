@@ -1,82 +1,103 @@
-.footer{
+.footer {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 40px;
- background-color: $black-90;   
- padding: 16px 40px 24px;
- .footer-top{
-    display: flex;
-    align-items: center;
-    gap: 40px;
- }
- .link-container{
-    display: flex;
-    align-items: center;
-    gap: 32px;
- }
- .links{
-    font-weight: 500;
-    font-size: rem(16);
-    line-height: 1.2rem;
-    letter-spacing: -1px;
-    color: $gray-65;
-    cursor: pointer;
-    text-decoration: none;
+    background-color: $black-90;
+    padding: 16px 40px 24px;
 
-    &:hover{
-        text-decoration: underline;
-        color: $yellow-70;
+    @include mq(phone) {
+        padding: 16px;
     }
 
- }
- .social-container{
-    display: flex;
-    align-items: center;
-    gap: 32px;
+    .footer-top {
+        display: flex;
+        align-items: center;
+        gap: 40px;
 
- }
- .social-icon{
-    @include IconSize(32px,32px ,pointer);
+        @include mq(phone) {
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
 
-        svg{
-            path{
-               transition: stroke .4s;
+    .link-container {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .links {
+        font-weight: 500;
+        font-size: rem(16);
+        line-height: 1.2rem;
+        letter-spacing: -1px;
+        color: $gray-65;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: $yellow-70;
+        }
+
+    }
+
+    .social-container {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+    }
+
+    .social-icon {
+        @include IconSize(32px, 32px, pointer);
+
+        svg {
+            path {
+                transition: stroke .4s;
             }
         }
-        &:hover{
-            svg{
-                path{
+
+        &:hover {
+            svg {
+                path {
                     stroke: $yellow-70;
                 }
             }
         }
- }
- .linkedin{
-    @include IconSize(32px,32px ,pointer);
-    svg{
-        path{
-           transition: fill .4s;
-        }
-        rect{
-            transition: stroke .4s;
-        }
     }
-    &:hover{
-        svg{
-            path{
-               fill:$yellow-70;
+
+    .linkedin {
+        @include IconSize(32px, 32px, pointer);
+
+        svg {
+            path {
+                transition: fill .4s;
             }
-            rect{
-               stroke:$yellow-70;
+
+            rect {
+                transition: stroke .4s;
             }
         }
+
+        &:hover {
+            svg {
+                path {
+                    fill: $yellow-70;
+                }
+
+                rect {
+                    stroke: $yellow-70;
+                }
+            }
+        }
     }
- }
- .copyright{
-     font-size: rem(16);
-     font-weight: 500;
-     color: $gray-70;
-     margin-top: 16px;
- }
+
+    .copyright {
+        font-size: rem(16);
+        font-weight: 500;
+        color: $gray-70;
+        margin-top: 16px;
+    }
 }

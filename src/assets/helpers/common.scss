@@ -1,14 +1,15 @@
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 40px;
 
-    @include mq(desktop-wide){
+    @include mq(desktop-wide) {
         max-width: 1200px;
     }
 
 }
-.logo-text{
+
+.logo-text {
     display: block;
     padding: 0 8px;
     position: relative;
@@ -25,47 +26,64 @@
     background-size: 200% 100%;
     background-position: 0%;
     transition: background-position 0.42s ease;
-  cursor: pointer;
+    cursor: pointer;
+
     &:hover {
-      background-position: 100%;
+        background-position: 100%;
     }
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 
-    @include mq(desktop-md){
-       grid-template-columns: repeat(3,1fr); 
+    @include mq(desktop-md) {
+        grid-template-columns: repeat(3, 1fr);
     }
-    @include mq(tablet){
-       grid-template-columns: repeat(2,1fr); 
+
+    @include mq(tablet) {
+        grid-template-columns: repeat(2, 1fr);
     }
-    @include mq(phone){
-       grid-template-columns: 1fr;
-       column-gap: 0;
+
+    @include mq(phone) {
+        grid-template-columns: 1fr;
+        column-gap: 0;
     }
 }
 
-.main-section{
+.main-section {
     background-color: $black-90;
 }
-.page-container{
+
+.page-container {
     padding: 110px 40px 80px;
+
+    @include mq(tablet) {
+        padding: 100px 32px 40px;
+    }
+
+    @include mq(phone) {
+        padding: 100px 16px 40px;
+    }
 }
 
 
 // flex
-.flex-column-between{
+.flex-column-between {
     display: flex;
-flex-direction: column;
-justify-content: space-between;
-gap: 16px;
-height: 100%;
-width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    height: 100%;
+    width: 100%;
+
+    @include mq(phone) {
+        gap: 12px;
+    }
 }
-.flex-column-end{
+
+.flex-column-end {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -73,7 +91,8 @@ width: 100%;
     height: 100%;
     width: 100%;
 }
-.flex-center-center{
+
+.flex-center-center {
     display: flex;
     justify-content: center;
     align-items: center;
